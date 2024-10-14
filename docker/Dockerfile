@@ -1,8 +1,13 @@
 FROM nvidia/cuda:11.1.1-cudnn8-devel
 
+
 ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+
 RUN apt-get update && apt-get install -y \
-	python3-opencv ca-certificates python3-dev git wget sudo ninja-build
+	python3-opencv ca-certificates python3-dev git wget sudo ninja-build && \
+	apt-get clean
 RUN ln -sv /usr/bin/python3 /usr/bin/python
 
 # create a non-root user
