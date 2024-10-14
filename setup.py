@@ -220,7 +220,7 @@ setup(
         "dataclasses; python_version<'3.7'",
         "omegaconf==2.3.0",
         "pillow==9.1.0",
-        "piopath==0.1.7",
+        # "piopath==0.1.7",
         "rapidfuzz==2.15.1",
         "editdistance",
         # When adding to the list, may need to update docs/requirements.txt
