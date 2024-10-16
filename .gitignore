@@ -1,1 +1,4 @@
 __pycache__/
+detectron2.egg-info
+detectron2/_C.cpython-310-x86_64-linux-gnu.so
+build
