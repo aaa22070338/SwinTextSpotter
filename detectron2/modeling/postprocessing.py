@@ -58,6 +58,7 @@ def detector_postprocess(
     output_boxes.scale(scale_x, scale_y)
     output_boxes.clip(results.image_size)
 
+    output_boxes = output_boxes.to('cuda')
     results = results[output_boxes.nonempty()]
 
     if results.has("pred_masks"):
