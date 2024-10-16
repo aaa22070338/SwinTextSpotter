@@ -30,19 +30,10 @@ synergy on text spotting tasks. [Code](https://github.com/mxin262/ESTextSpotter)
 - Python=3.8
 - PyTorch=1.8.0, torchvision=0.9.0, cudatoolkit=11.1
 - OpenCV for visualization
-
+k
 ## Steps
-1. Install the repository (we recommend to use [Anaconda](https://www.anaconda.com/) for installation.)
+1. Install the repository by creating a [docker container](https://github.com/aaa22070338/SwinTextSpotter/tree/main/docker)
 ```
-conda create -n SWINTS python=3.8 -y
-conda activate SWINTS
-conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
-pip install opencv-python
-pip install scipy
-pip install shapely
-pip install rapidfuzz
-pip install timm
-pip install Polygon3
 git clone https://github.com/mxin262/SwinTextSpotter.git
 cd SwinTextSpotter
 python setup.py build develop
