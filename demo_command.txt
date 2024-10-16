@@ -1,0 +1,2 @@
+
+python demo/demo.py   --config-file projects/SWINTS/configs/SWINTS-swin-pretrain.yaml   --input ./test_images/test.jpeg   --output ./test_images/test_output.jpeg   --confidence-threshold 0.4   --opts MODEL.WEIGHTS ./model/eng_model_pretrain.pth
