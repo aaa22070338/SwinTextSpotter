@@ -34,6 +34,7 @@ k
 ## Steps
 1. Install the repository by creating a [docker container](https://github.com/aaa22070338/SwinTextSpotter/tree/main/docker)
 ```
+# after docker container create
 git clone https://github.com/mxin262/SwinTextSpotter.git
 cd SwinTextSpotter
 python setup.py build develop
