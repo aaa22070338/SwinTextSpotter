@@ -39,6 +39,7 @@ ARG TORCH_CUDA_ARCH_LIST="Kepler;Kepler+Tesla;Maxwell;Maxwell+Tegra;Pascal;Volta
 ENV TORCH_CUDA_ARCH_LIST="${TORCH_CUDA_ARCH_LIST}"
 
 RUN pip install --user -e  SwinTextSpotter
+RUN pip install numpy==1.26 opencv-python scipy shapely rapidfuzz timm Polygon3
 
 # Set a fixed model cache directory.
 ENV FVCORE_CACHE="/tmp"
