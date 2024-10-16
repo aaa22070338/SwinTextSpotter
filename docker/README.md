@@ -8,7 +8,7 @@ docker build --build-arg USER_ID=1000 -t detectron2:v0 .
 # Launch (require GPUs):
 docker run --gpus all -it \
   --shm-size=8gb --env="DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-  --volume="path/to/your/SwinTextSpotter/:/home/appuser/SwinTextSpotter"
+  --volume="path/to/your/SwinTextSpotter/:/home/appuser/SwinTextSpotter/"
   --name=SwinTextSpotter detectron2:v0
 
 ```
