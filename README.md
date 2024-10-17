@@ -35,8 +35,7 @@ k
 1. Install the repository by creating a [docker container](https://github.com/aaa22070338/SwinTextSpotter/tree/main/docker)
 ```
 # after docker container create
-git clone https://github.com/mxin262/SwinTextSpotter.git
-cd SwinTextSpotter
+# (inside dcoker container)
 python setup.py build develop
 ```
 
@@ -123,11 +122,11 @@ python projects/SWINTS/train_net.py \
 7. Visualize the detection and recognition results (e.g., with ResNet50 backbone)
 ```
 python demo/demo.py \
-  --config-file projects/SWINTS/configs/SWINTS-swin-finetune-totaltext.yaml \
-  --input input1.jpg \
-  --output ./output \
+  --config-file ./projects/SWINTS/configs/SWINTS-swin-pretrain.yaml \
+  --input ./test_images/test.jpeg \
+  --output ./test_images/test_output.jpeg \
   --confidence-threshold 0.4 \
-  --opts MODEL.WEIGHTS ./output/model_final.pth
+  --opts MODEL.WEIGHTS ./model/eng_model_pretrain.pth
 ```
 
 ## Example results:
