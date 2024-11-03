@@ -36,7 +36,7 @@ k
 ```
 # after docker container create
 # (inside dcoker container)
-python setup.py build develop
+sudo -E python setup.py build develop
 ```
 
 2. dataset path
